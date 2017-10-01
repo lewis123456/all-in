@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CKEditor</title>
+    <script type="text/javascript" src="ckeditor/ckeditor.js"></script>
+    <script type="text/javascript">
+
+    </script>
+</head>
+<body>
+<p>请输入博客内容</p>
+<form id="form1" name="form1" method="post" action="">
+    <table width="100%" border="0">
+        <tr>
+            <th width="8%" scope="row">主题：</th>
+            <td width="92%"><label>
+                <input name="title" type="text" id="title" size="60"/>
+            </label></td>
+        </tr>
+        <tr>
+            <th scope="row">类别：</th>
+            <td><label>
+                <select name="select">
+                    <option value="1">心情故事</option>
+                    <option value="2">旅游的故事</option>
+                </select>
+            </label></td>
+        </tr>
+        <tr>
+            <th scope="row">内容：</th>
+            <td><label>
+                <span style="font-size:18px;">
+                    <textarea id="content" class="ckeditor" name="content"></textarea>
+                </span>
+            </label></td>
+        </tr>
+        <tr>
+            <th scope="row"><label>
+                <input name="reset" type="reset" id="reset" value="重置"/>
+            </label></th>
+            <td><label>
+                <input name="Submit" type="submit" id="Submit" value="提交"/>
+            </label></td>
+        </tr>
+    </table>
+</form>
+<p>&nbsp;</p>
+</body>
+</html>
